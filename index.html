@@ -16,12 +16,15 @@
 </head>
 <body>
    <main>
-      <div class="picture-area">
-         <img src="asset/image-product-desktop.jpg" alt="perfume in a bottle"
-              srcset="asset/image-product-mobile.jpg 901w, asset/image-product-desktop.jpg 1000w"
-         />
+      <div class="product-picture">
+         <picture>
+            <source srcset="asset/image-product-mobile.jpg" media="(max-width: 900px)">
+            <source srcset="asset/image-product-desktop.jpg" media="(min-width: 901px)">
+            <img src="asset/image-product-desktop.jpg" alt="perfume in a bottle">
+         </picture>
+         
       </div>
-      <div class="text-area">
+      <div class="product-info">
          <h2 class="perfume">perfume</h2>
          <p lang="fr" class="gabbriell">gabbriell essence eau de parfum</p>
 
